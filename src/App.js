@@ -27,121 +27,121 @@ function App() {
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox inspectionType">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox inspectionType ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Name" />,
       dataIndex: "name",
       key: "name",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="Address" />,
       dataIndex: "address",
       key: "address",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
     {
       title: <CustomHeader text="PhoneNumber" />,
       dataIndex: "phoneNumber",
       key: "phoneNumber",
       width: 200,
-      render: (_, record) => (
-        <div className="checkBox">
-          <Checkbox></Checkbox>
+      render: (_, record, rowIndex) => (
+        <div className={`checkBox ${rowIndex === 2 ? 'showCheckbox' : ''}`}>
+          {rowIndex > 0 ? <Checkbox /> : 250}
         </div>
-      ),
+      )
     },
   ];
 
@@ -154,6 +154,24 @@ function App() {
     },
     {
       key: "2",
+      name: "John",
+      address: "10 Downing Street",
+      phoneNumber: 42,
+    },
+    {
+      key: "3",
+      name: "John",
+      address: "10 Downing Street",
+      phoneNumber: 42,
+    },
+    {
+      key: "4",
+      name: "John",
+      address: "10 Downing Street",
+      phoneNumber: 42,
+    },
+    {
+      key: "5",
       name: "John",
       address: "10 Downing Street",
       phoneNumber: 42,

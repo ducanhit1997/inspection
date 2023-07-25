@@ -41,10 +41,12 @@ code {
 .checkBoxHeader {
   padding: 7px 6px;
   text-align: center;
+  background: #f2f4f5;
 }
 
 .itemName {
   font-weight: 500;
+  background: #f2f4f5;
 }
 
 .inspectionType {
